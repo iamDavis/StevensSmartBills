@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyMap</title>
+    <!--map-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <body class="bodybg" background="images/1.jpg">
+    <input type="checkbox" id="menuToggle"></input>
+    <label for="menuToggle" class="menu-icon">&#9776;</label>
+    <h3><a href="Home.html">Smart Duckbills</a></h3>
+    <br><br>
+	<button class="buttonInSchool" onclick="dropInSchool()">In School </button>
+	<button class="buttonOutSchool" onclick="dropOutSchool()">Out School </button>
+    <br>
+    <br>
+    <br>
+    <nav class="menu">
+
+        <ul>
+            <li><a href="#" onclick="MapsAC()">Americas Cup</a></li>
+            <h1>Samuel C.Williams Library</h1>
+            <li><a href="#" onclick="MapsSSC()">Student Service Center</a></li>
+            <h1>Howe Center Lobby </h1>
+
+            <li><a href="#" onclick="MapsCS()">Campus Store</a></li>
+            <h1>Wesley J. Howe Building</h1>
+
+        	<li><a href="#" onclick="MapAGC()">Aether Game Cafe</a></li>
+            <h1>519 Washington Street</h1>
+  
+            <li><a href="#" onclick="MapDD()">Dunkin' Donuts</a></li> 
+            <h1>700 Washington Street</h1>
+ 
+            <li><a href="#" onclick="MapCVS()">CVS </a></li>
+            <h1>59 Washington Street</h1>
+
+            <li><a href="#" onclick="Map711()">Seven-Eleven </a></li>
+            <h1>422 Washington Street</h1> 
+
+            <li><a href="#" onclick="MapRAD()">Rite Aid</a></li>
+            <h1>1300  Willow Ave</h1> 
+ 
+            <li><a href="#" onclick="MapACC()">Asia Chinese Cuisine</a></li>
+            <h1>926 Washington Street</h1>
+
+            <li><a href="#" onclick="MapBB()">Bareburger</a></li>
+            <h1>515 Washington Street</h1>   
+         
+    </ul>
+</nav>
+
+
+<div id ="map">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa0MCRbnP3IAj6sdaDm90NjXhK7D2QgbU&callback=initMap" async defer ></script>
+    <script src="js/MyMain.js"></script>
+
+</div>
+
+<div id="loading" class="loading">Loading map, please wait...</div>  
+
+</body>
+</html>

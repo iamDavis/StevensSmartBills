@@ -1,0 +1,179 @@
+#map{
+    position: fixed;
+    left: 250px;
+    top: 50px;
+    height: 830px;
+    width: 83%;
+}
+* { 
+    padding: 0; 
+    margin: 0; 
+}
+body { 
+    font-family: sans-serif; 
+    overflow: hidden; 
+}
+
+a { 
+    text-decoration: none; 
+    color: snow; 
+    font-family:sans-serif; 
+     font-size: 120%;
+}
+li { 
+    list-style-type: none; 
+}
+h2{
+    color: snow;
+    position: fixed;
+    left: 250px;
+    font-family: sans-serif;
+    font-size: 250%;
+}
+
+h1{
+    text-decoration: none; 
+    color: #F5DEB3;
+    font-size:80%;
+    border-bottom: 1px solid #C3AA6E;
+}
+header {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    border-bottom: 1px solid #EEE;
+}
+nav { 
+    width: 100%; 
+    text-align: center; }
+nav a {
+    display: block;
+    padding: 10px 5px;
+    color: #F0EADC;
+}
+nav a:hover { 
+    background: black; 
+    color: #FFF; }
+nav li:last-child a { 
+    border-bottom: none; 
+}
+/*-----------------------------------------*/
+h3{ position: absolute;
+    left: 250px;
+    font-size: 300%;
+}
+.menu {
+    width: 240px;
+    height: 100%;
+    position: absolute;
+    background: #9D1535;
+    left: -240px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.menu-icon {
+    padding: 10px 20px;
+    background: #9D1535;
+    color: #987D3E;
+    cursor: pointer;
+    float: left;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+#menuToggle {
+    display: none;
+}
+#menuToggle:checked ~ .menu {
+    position: absolute;
+    left: 0;
+}
+/*#drop{
+    position: absolute;
+    right: 30px;
+    padding: 10px 20px;
+
+}*/
+.buttonInSchool {
+  /*display: block;*/
+  padding: 15px 20px;
+  margin: 0 30px;
+  position: absolute;
+  right: 150px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;   
+  text-decoration: none;
+  outline: none;
+  color: snow;
+  background-color:#9D1535;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.buttonInSchool:hover {background-color: black}
+
+.buttonInSchool:active {
+  background-color: black;
+  box-shadow: 0 4px #666;
+  transform: translateY(3px);
+}
+
+.buttonOutSchool {
+
+position: absolute;
+  right: 20px;
+  /*display: block;*/
+  padding: 15px 30px;
+  margin:  0 20px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;   
+  text-decoration: none;
+  outline: none;
+  color: snow;
+  background-color:#9D1535;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.buttonOutSchool:hover {background-color: black}
+
+.buttonOutSchool:active {
+  background-color: #block;
+  box-shadow: 0 4px #666;
+  transform: translateY(3px);
+}
+
+.bodybg{
+background: url(../images/1.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+}
+
+.loading{  
+    width:200px;  
+    height:56px;  
+    position: absolute;  
+    top:50%;  
+    left:50%;  
+    line-height:56px;  
+    color:#fff;  
+    padding-left:60px;  
+    font-size:15px;  
+    background: #000 url(loading.gif) no-repeat 10px 50%;  
+    opacity: 0.7;  
+    z-index:9999;  
+    -moz-border-radius:20px;  
+    -webkit-border-radius:20px;  
+    border-radius:20px;  
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);  
+}  
